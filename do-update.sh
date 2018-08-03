@@ -70,8 +70,6 @@ sleep 1
 
 echoSection "Updating Bash-it"
 
-#cd ~/.bash_it && git reset --hard > /dev/null
-
 cd ~/.bash_it
 git stash
 git stash drop
