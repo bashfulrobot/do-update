@@ -9,3 +9,8 @@
 * apt
 * git
 * bash shell
+
+## Usage
+I generally just add an alias to my `.bashrc` to consume the script.
+
+I.E. - `alias do-update="$HOME/dotfiles/do-update.sh"`
