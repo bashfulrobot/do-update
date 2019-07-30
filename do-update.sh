@@ -21,12 +21,6 @@
 
 #!/bin/bash
 
-# Path to the bash it configuration
-export BASH_IT="$HOME/.bash_it"
-
-# Load Bash It - needed to get bash-it function
-source "$BASH_IT"/bash_it.sh > /dev/null
-
 # Vars
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
@@ -67,14 +61,6 @@ sleep 1
 echoSection "Adding Missing Deps"
 sudo apt install -f -y
 sleep 1
-
-echoSection "Updating Bash-it"
-
-cd ~/.bash_it
-git stash
-git stash drop
-bash-it update
-echo
 
 echoHeader "Completed System Update"
 
